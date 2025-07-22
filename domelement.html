@@ -7,13 +7,29 @@
 </head>
 <body>
     
-    <h1>This this Task</h1>
-
+    <h1>This is Task</h1>
+    <button onclick="domevent()">click here</button>
+    <button onmouseover="domevent2()">mouse over</button>
+    <button onmouseout="domevent3()">out</button>
     <script>
      document.write(" <h3 style = 'color:red;' >This is a DOM element from document write</h3>");
     
     document.write("<p style='font-size: 20px; color: orange; 'font-family: Arial;'>This is a paragraph added by JavaScript.</p>");
      
+    function domevent() {
+        document.body.style.color = "cyan";
+        document.body.style.fontSize = "20px";
+    }
+
+    function domevent2() {
+        document.body.style.backgroundColor = "lightcoral";
+        document.body.style.fontSize = "25px";
+    }
+        
+    function domevent3() {
+        document.body.style.backgroundColor = "lightgreen";
+        document.body.style.fontSize = "30px";
+    }
 
 
     </script>
